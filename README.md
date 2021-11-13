@@ -35,9 +35,9 @@ pkg install python2
 pkg install bash
 pkg install git
 pip install bs4
-git clone https://github.com/YosuaXElite3/MBS.py
-cd MBS
+git clone https://github.com/YosuaXElite3/MBS-1.py
+cd MBS-1
 git pull
-python MBS.py
+python MBS-1.py
 ```
 
