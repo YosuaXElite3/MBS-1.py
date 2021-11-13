@@ -474,7 +474,7 @@ def ganti_ua():
 		print(war+"Oke User Agent Sudah Berhasil DiSeting !")
 		time.sleep(1)
 		os.system("rm -rf .ua")
-		exit(war+"Jalankan Lagi Script : python jmbf.py")
+		exit(war+"Jalankan Lagi Script : python MBS-1.py")
 
 	else:
 		print(war+"Oke User Agent Sudah Berhasil DiSeting !")
@@ -482,7 +482,7 @@ def ganti_ua():
 		dump = open('.ua','w') 
 		dump.write(uq)
 		dump.close()
-		exit(war+"Jalankan Lagi Script : python MBS.py")
+		exit(war+"Jalankan Lagi Script : python MBS-1.py")
 
 
 def jalan(z):
@@ -492,7 +492,7 @@ def jalan(z):
 		time.sleep(0.02)
 def login():
     os.system("clear")
-    toket = input(war+"Masukan Token Facebook : ")
+    toket = input(war+"Masukan Token Facebook Dan Pakai Harus Akun tumbal Jangan Akun Utama : ")
     try:
         otw = requests.get("https://graph.facebook.com/me?access_token=" + toket)
         a = json.loads(otw.text)
